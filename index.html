@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <div id="city">
+            <form>
+                <h2>Search for a City:</h2>
+                <input placeholder="city" />
+                <button>Search</button>
+            </form>
+
+            <div id="checked-cities">searched cities</div>
+        </div>
+
+        <div id="weather">
+            <div id="today-weather"> 
+                
+            </div>
+            <div>
+                <h2> 5 days forecast</h2>
+                <div id="future-weather">
+                    <div class="futureDay">
+                        <div class="future-date"></div>
+                        <div class="future-weather-icon"></div>
+                        <div class="future-temp"></div>
+                        <div class="future-wind"></div>
+                        <div class="future-humidity"></div>
+                    </div>
+                    <div class="futureDay"> +2 day</div>
+                    <div class="futureDay"> +3 day</div>
+                    <div class="futureDay"> +4 day</div>
+                    <div class="futureDay"> +5 day</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

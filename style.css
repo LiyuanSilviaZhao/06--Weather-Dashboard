@@ -1,0 +1,41 @@
+header{
+    background-color:blue;
+} 
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#city{
+    width:20%;
+    margin: 20px;
+}
+
+form{
+    height:100px
+}
+#checked-cities{
+    border-top: solid;
+}
+
+#weather{
+    width:70%;
+}
+
+#future-weather{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#today-weather{
+    height: 150px;
+    border: solid;
+}
+.futureDay{
+    width:17%;
+    background-color:rgb(40, 40, 82);
+    margin-right:20px;
+    height:170px;
+}
+
