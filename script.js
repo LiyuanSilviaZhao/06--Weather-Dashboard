@@ -14,7 +14,7 @@ function handleFormClick(event) {
 }
 
 function getApi(cityName) {
-    var requestUrlGeo = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + ",US&limit=5&appid=" + APIKey;
+    var requestUrlGeo = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + ",US&limit=5&appid=" + APIKey;
     fetch(requestUrlGeo)
         .then(function (response) {
             var result = response.json();
@@ -43,7 +43,7 @@ function getApi(cityName) {
                     }
 
                                
-                    var requestUrl5Days = "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&units=imperial&appid=" + APIKey;
+                    var requestUrl5Days = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&units=imperial&appid=" + APIKey;
                     fetch(requestUrl5Days)
                         .then(function (response) {
                             return response.json();
@@ -102,7 +102,7 @@ function renderWeatherInfo(weatherInfo, cityName){
 
     date.textContent = "(" + allWeatherInfo.todayWeather.Date + ")";
     var a = allWeatherInfo.todayWeather.Icon;
-    icon.src = "http://openweathermap.org/img/w/"+ a + ".png";
+    icon.src = "https://openweathermap.org/img/w/"+ a + ".png";
     temp.textContent = "Temp: " + allWeatherInfo.todayWeather.Temp + "°F";
     wind.textContent = "Wind: " + allWeatherInfo.todayWeather.Wind + " MPH";
     humidity.textContent = "Humidity: " + allWeatherInfo.todayWeather.Humidity + " %";
@@ -139,7 +139,7 @@ function renderWeatherInfo(weatherInfo, cityName){
         date.textContent = allWeatherInfo.futureWeather[i].Date;
         icon.textContent = allWeatherInfo.futureWeather[i].Icon;
         var b = allWeatherInfo.futureWeather[i].Icon;
-        icon.src = "http://openweathermap.org/img/w/"+ b + ".png";
+        icon.src = "https://openweathermap.org/img/w/"+ b + ".png";
         temp.textContent = "Temp: " + allWeatherInfo.futureWeather[i].Temp + "°F";
         wind.textContent = "Wind: " + allWeatherInfo.futureWeather[i].Wind + " MPH";
         humidity.textContent = "Humidity: " + allWeatherInfo.futureWeather[i].Humidity + " %";
