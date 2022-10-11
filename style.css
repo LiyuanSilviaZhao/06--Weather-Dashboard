@@ -1,22 +1,21 @@
 header{
-    background-color:blue;
+    background-image: linear-gradient(to left, rgb(123, 123, 154), rgb(2, 2, 83));
+    height:60px;
+    display: flex;
+    flex-wrap: wrap;
 } 
 
 main{
     display: flex;
-    flex-wrap: wrap;
 }
 
 #city{
     width:20%;
-    margin: 20px;
+    margin : 20px;
 }
 
 form{
-    height:100px
-}
-#checked-cities{
-    border-top: solid;
+    height:120px;
 }
 
 #weather{
@@ -28,14 +27,103 @@ form{
     flex-wrap: wrap;
 }
 
-#today-weather{
+.today-box{
+    margin:10px;
     height: 150px;
     border: solid;
 }
+
 .futureDay{
     width:17%;
-    background-color:rgb(40, 40, 82);
+    background-color:rgb(50, 75, 112);
     margin-right:20px;
-    height:170px;
+    height:190px;
+    color:beige;
 }
 
+.bold {
+    font-style: bold;
+}
+
+h1{
+    font-size:xx-large;
+    color:beige;
+    margin-left: 50px;
+}
+
+h2{
+    font-size: x-large;
+    width:100%;
+    font-style: bold;
+    margin:auto;
+}
+
+input{
+    width:95%;
+    padding: 5px;
+    margin-top:10px;
+    border-radius: 3px;
+}
+
+button{
+    width:100%;
+    color:beige;
+    background-color: rgb(82, 136, 193);
+    margin-top: 10px;
+    padding:5px;
+    border-radius: 3px;
+    border-style: hidden;
+}
+
+#checked-cities{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid;
+}
+.cityNameList{
+    background-color: lightgrey;
+    width:100%;
+    margin-top: 10px;
+    padding:5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.todayTitle{
+    font:bold;
+    font-size:x-large;
+    margin-bottom: 20px;
+    margin-left:10px
+}
+
+img {
+    max-width:30px;
+    height: 30px;
+    padding-top:10px;
+    margin-left:10px;
+}
+
+.weatherInfoDiv{
+    margin:10px;
+}
+
+#future-weather-box{
+    margin:10px;
+
+}
+#future-weather-title{
+    font-size: larger;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.futureDate{
+    margin:10px;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.futureInfoDiv{
+    margin:10px;
+}

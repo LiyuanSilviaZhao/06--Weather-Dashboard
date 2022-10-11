@@ -17,33 +17,20 @@
 
     <main>
         <div id="city">
-            <form>
+            <form id="cityForm">
                 <h2>Search for a City:</h2>
-                <input placeholder="city" />
+                <input id="inputInfo" placeholder="city" />
                 <button>Search</button>
             </form>
 
-            <div id="checked-cities">searched cities</div>
+            <div id="checked-cities"></div>
         </div>
 
         <div id="weather">
-            <div id="today-weather"> 
-                
-            </div>
-            <div>
-                <h2> 5 days forecast</h2>
+            <div id="today-weather"></div>
+            <div id="future-weather-box">
+                <div id="future-weather-title"></div>
                 <div id="future-weather">
-                    <div class="futureDay">
-                        <div class="future-date"></div>
-                        <div class="future-weather-icon"></div>
-                        <div class="future-temp"></div>
-                        <div class="future-wind"></div>
-                        <div class="future-humidity"></div>
-                    </div>
-                    <div class="futureDay"> +2 day</div>
-                    <div class="futureDay"> +3 day</div>
-                    <div class="futureDay"> +4 day</div>
-                    <div class="futureDay"> +5 day</div>
                 </div>
             </div>
         </div>
